@@ -7,6 +7,6 @@ class Persona:
     def Mostrar_detalle(self):
         print(f"persona: {self.__nombre}, {self.apellido} {self.edad}")
 
-persona1 = Persona("Juan", "Perez", 28)
-persona1.__nombre = "Juan Carlos"
+persona1 = Persona("pedro", "garcia", 28)
+persona1.__nombre = "pedro luis"
 persona1.Mostrar_detalle()
