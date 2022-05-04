@@ -3,8 +3,9 @@ from Polimorfismo.Gerente import Gerente
 
 
 def imprimir_detalles(objeto):
-    print(objeto)
+    #print(objeto)
     print(type(objeto))
+    print(objeto.mostrar_detalles())
 
 
 empleado = Empleado("Juan", 5000)
