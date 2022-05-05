@@ -21,7 +21,7 @@ class Empleado:
         self._sueldo = sueldo
 
     def __str__(self):
-        return f"Nombre: {self.nombre} Sueldo: {self.sueldo}"
+        return f"Nombre: {self._nombre} Sueldo: {self._sueldo}"
 
     def mostrar_detalles(self):
         return self.__str__()
