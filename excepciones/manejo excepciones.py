@@ -1,7 +1,11 @@
+from excepciones.NumerosIgualesexcepcion import NumerosIgualesExcepcion
+
 resultado = None
 try:
     a = int(input("Primer numero: "))
     b = int(input("segundo numero: "))
+    if a == b:
+        raise NumerosIgualesExcepcion("Numeros iguales XD")
     resultado = a/b
 
 except ZeroDivisionError as ze:
