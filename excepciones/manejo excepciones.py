@@ -11,5 +11,10 @@ except TypeError as te:
 except Exception as e:
     print(f"Tenemos un error: {e}")
 
+else:
+    print("no hay error")
+finally:
+    print("yo soy el bloque finally y siempre me ejecuto")
+
 print(f"Resultado = {resultado}")
 print("cotinuamos...")
