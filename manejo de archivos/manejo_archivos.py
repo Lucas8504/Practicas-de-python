@@ -1,6 +1,6 @@
 try:
     archivo = open("prueba.txt", "w", encoding="utf8")
-    archivo.write("Agregamos info al archivo")
+    archivo.write("Agregamos info al archivo\n")
     archivo.write("Adios")
 except Exception as e:
     print(e)

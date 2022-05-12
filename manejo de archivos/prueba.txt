@@ -1,1 +1,2 @@
-Agregamos imfo al archivoAdios
+Agregamos info al archivo
+Adios
