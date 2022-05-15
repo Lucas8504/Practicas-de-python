@@ -6,11 +6,18 @@ class MiClase:
         self.vaiables_instancia = variable_instancia
 
     @staticmethod
-    def metodo_statico():
+    def metodo_statico():   # los metodos estaticos no acceden a las variables de instancia pero si tienen relacion con la clase
         print("""
         Metodo estatico
         """)
         print(MiClase.vaiables_clase)
+
+    @classmethod
+    def metodo_clase(cls):
+        print("""
+        Metodo de clase (cls)
+        """)
+        print(cls.metodo_clase)  # Los metodos de clase pueden acceder a las variables de clase
 
 print(MiClase.vaiables_clase)
 miClase = MiClase("valor variable instancia")
@@ -25,3 +32,4 @@ print(miClase2.vaiables_clase)
 print(miClase.vaiables_clase2)
 
 MiClase.metodo_statico()
+MiClase.metodo_clase()
