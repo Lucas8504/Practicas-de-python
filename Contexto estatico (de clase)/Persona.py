@@ -26,4 +26,8 @@ print(" ")
 persona3 = Persona("Eduardo", 24)
 print(persona3)
 print(" ")
+Persona.generar_siguiente_valor() # incrementa el valor de forma independiente
+persona4 = Persona("Paula", 35)
+print(persona4)
+print(" ")
 print(f"Valor contador personas: {Persona.contador_personas}")
