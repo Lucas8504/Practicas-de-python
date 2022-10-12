@@ -10,9 +10,11 @@ windows.geometry('600x400')
 windows.title('Hola Mundo')
 # agregamos un icono
 windows.iconbitmap('icono.ico')
-
+# Creamos un metodo click
+def click():
+    print("Hola")
 # Creamos un boton (winget) donde el objeto padre es windows
-boton1 = ttk.Button(windows, text="Dar click")
+boton1 = ttk.Button(windows, text="Dar click", command=click)
 # Usar el pack layout manager para ver el boton en la ventana
 boton1.pack()
 
