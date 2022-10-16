@@ -16,9 +16,15 @@ windows.iconbitmap('icono.ico')
 def evento1():
     boton1.config(text='Boton 1 precionado')
 
+def evento2():
+    boton2.config(text='boton 2 precionado')
+
 # Definimos 2 botones
 boton1 = ttk.Button(windows, text='boton 1', command=evento1)
 boton1.grid(row=0, column=0)
+
+boton2 = ttk.Button(windows, text='boton 2', command=evento2)
+boton2.grid(row=2, column=0)
 
 
 windows.mainloop()
